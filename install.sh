@@ -9,4 +9,5 @@ cat > /var/www/html/index.html << EOF
 </html>
 EOF
 systemctl start httpd
-systemtl restart httpd
+systemctl restart httpd
+systemctl enable httpd
