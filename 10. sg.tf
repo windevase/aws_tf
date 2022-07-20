@@ -28,8 +28,8 @@ resource "aws_security_group" "hjko_sg" {
         },
         {
             description      = "MYSQL"
-            from_port        = 3360
-            to_port          = 3360
+            from_port        = 3306
+            to_port          = 3306
             protocol         = "tcp"
             cidr_blocks      = ["0.0.0.0/0"]
             ipv6_cidr_blocks = ["::/0"]

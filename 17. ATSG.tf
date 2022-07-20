@@ -13,5 +13,4 @@ resource "aws_autoscaling_group" "hjko_atsg" {
   force_delete = false
   launch_configuration = aws_launch_configuration.hjko_lacf.name
   vpc_zone_identifier = [aws_subnet.web_a.id, aws_subnet.web_c.id]
-
 }
